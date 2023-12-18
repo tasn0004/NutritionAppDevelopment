@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundPageColor2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:layout_above="@id/dots_indicator">
+
+    >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_grocery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_margin="5dp"
+        app:tabBackground="@drawable/tab_selector_for_grocerypage"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextColor="@color/TextColorWhiteVsBlack"
+        android:background="@color/BackgroundPageColor2"
+        app:tabTextAppearance="@style/MyTabTextAppearance"
+        app:tabSelectedTextColor="@color/AlwaysBlack" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_grocery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundPageColor2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout_grocery"
+        app:layout_constraintTop_toTopOf="@+id/dots_indicator"
+        app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        app:dotsColor="@color/white"
+        app:dotsStrokeColor="@color/GoldenYellow"
+        />
+</RelativeLayout>

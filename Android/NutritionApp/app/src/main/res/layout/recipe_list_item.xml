@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BackgroundPageColor2"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp">
+
+        <com.nutritionapp.RoundedImageView
+            android:id="@+id/recipeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Gradient overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/top_shadow_recipe" />
+
+        <!-- Name of the recipe displayed over the image -->
+        <TextView
+            android:id="@+id/recipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <!-- Heart icon positioned at the top-right corner -->
+        <ImageView
+            android:id="@+id/favoriteIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="1116dp"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Favorite icon positioned below the heart icon -->
+        <ImageView
+            android:id="@+id/heartIconCount"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="2dp"
+
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

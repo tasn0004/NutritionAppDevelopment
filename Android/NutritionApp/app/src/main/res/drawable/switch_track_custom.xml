@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <solid android:color="@android:color/white" /> <!-- Replace with your desired background color -->
+            <stroke android:width="2dp" android:color="@android:color/black" /> <!-- This is the black border -->
+        </shape>
+    </item>
+</selector>

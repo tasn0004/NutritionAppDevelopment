@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundPageColor1"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/headerMyAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Account"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:layout_marginTop="5dp" />
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Save"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/GoldenYellow"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="132dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/GoldenYellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/headerPersonalInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_border">
+
+                <EditText
+                    android:id="@+id/editFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Edit First Name"
+                    android:textColorHint="#40000000"
+                    android:backgroundTint="@color/black"
+                    android:background="@android:color/transparent"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/LightGreyForTabs"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/editLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Last Name"
+                    android:backgroundTint="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textSize="12sp"
+                    android:textColorHint="#40000000"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_marginEnd="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/LightGreyForTabs"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Email"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/black"
+                    android:textColorHint="#40000000"
+                    android:padding="10dp"
+                    android:layout_marginEnd="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/LightGreyForTabs"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Password"
+                    android:backgroundTint="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textSize="12sp"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#40000000"
+                    android:padding="10dp"
+                    android:layout_marginEnd="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/LightGreyForTabs"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Edit Date of Birth"
+                        android:layout_marginEnd="123dp"
+                        android:padding="7dp"
+                        android:layout_marginStart="3dp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/date_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:textSize="12sp"
+                        android:backgroundTint="#FCC115"
+                        android:textColor="@color/customBlack"
+                        android:text="Today" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Header Text -->
+            <TextView
+                android:id="@+id/headerMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biometric Information"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Height"
+                    android:layout_marginEnd="100dp"
+                    android:padding="7dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:minWidth="140dp">
+                        <EditText
+                            android:id="@+id/editHeight1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="@color/black"
+                            android:padding="10dp"
+                            android:minWidth="40dp"
+                            android:numeric="decimal"/>
+                        <EditText
+                            android:id="@+id/editHeight2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:visibility="gone"
+                            android:backgroundTint="@color/black"
+                            android:padding="10dp"
+                            android:minWidth="40dp"
+                            android:maxWidth="40dp"
+                            android:numeric="decimal"/>
+                        <Spinner
+                            android:id="@+id/heightInchSpinner"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:background="@drawable/spinner_background"
+                            android:entries="@array/height_units" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/heightRadioGroup1"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="140dp">
+
+                        <RadioButton
+                            android:id="@+id/inButton"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/toggle_left_selected"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="in"
+                            android:textColor="#000"/>
+
+                        <RadioButton
+                            android:id="@+id/cmButton"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/toggle_right_selected"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:text="cm"
+                            android:textColor="#000"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/LightGreyForTabs"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Weight"
+                    android:layout_marginEnd="100dp"
+                    android:padding="7dp"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:minWidth="100dp"
+                        android:maxWidth="100dp"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginEnd="40dp"
+                        android:numeric="decimal"/>
+
+                    <RadioGroup
+                        android:id="@+id/weightRadioGroup"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="140dp">
+
+                        <RadioButton
+                            android:id="@+id/lbButton"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/toggle_left_selected"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="lb"
+                            android:textColor="#000"/>
+
+                        <RadioButton
+                            android:id="@+id/kgButton"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/toggle_right_selected"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:text="kg"
+                            android:textColor="#000"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/LightGreyForTabs"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Wrist Circumference"
+                    android:layout_marginEnd="100dp"
+                    android:padding="7dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editWrist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:minWidth="100dp"
+                        android:maxWidth="100dp"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginEnd="40dp"
+                        android:numeric="decimal"/>
+
+                    <RadioGroup
+                        android:id="@+id/wristRadioGroup"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="140dp">
+
+                        <RadioButton
+                            android:id="@+id/inButtonWrist"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/toggle_left_selected"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="in"
+                            android:textColor="#000"/>
+
+                        <RadioButton
+                            android:id="@+id/cmButtonWrist"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/toggle_right_selected"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:text="cm"
+                            android:textColor="#000"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

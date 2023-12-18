@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Nutricooks</string>
+    <string name="logo_description">Logo</string>
+    <string name="next_button_description">Next button</string>
+
+
+    <string-array name="height_units">
+        <item>--</item>
+        <item>1/16</item>
+        <item>1/4</item>
+        <item>1/2</item>
+        <item>3/4</item>
+    </string-array>
+    <string-array name="ethnicity">
+        <item>Caucasian</item>
+        <item>African</item>
+        <item>Arab</item>
+        <item>Latin</item>
+        <item>East Asian</item>
+        <item>South Asian</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>sunday</item>
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+        <item>saturday</item>
+
+
+    </string-array>
+    <string-array name="meal_types">
+        <item>snacks</item>
+        <item>breakfast</item>
+        <item>dinner</item>
+        <item>lunch</item>
+        <item>desserts</item>
+    </string-array>
+    <style name="CustomTabText" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:textColor">@color/button_selected</item>
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/TextColorWhiteVsBlack</item>
+    </style>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">e6Ll6TU4kwmISih6oezEZOsmnm32eGOhNKu7Z7VK</string>
+    <string name="back4app_client_key">s440pyEcg7W9EOxVtMlFDzdARPWYD9Jw5MShBiQd</string>
+</resources>

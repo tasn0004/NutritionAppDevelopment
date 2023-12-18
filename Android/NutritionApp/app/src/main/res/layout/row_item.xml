@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:id="@+id/rowContainer">
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textOn=""
+        android:textColor="@color/black"
+        android:textOff=""
+        android:background="@drawable/toggle_selector" />
+
+    <TextView
+        android:id="@+id/ingredientNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:text="Ingredient Name" />
+
+    <TextView
+        android:id="@+id/ingredientQuantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:text="1L" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Rectangle border -->
+    <path
+        android:fillColor="#00000000"
+    android:strokeColor="#000000"
+    android:strokeWidth="2"
+    android:pathData="M2,2 L22,2 L22,22 L2,22 Z"/>
+
+    <!-- Checkmark -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M11,16.2l-4.2,-4.2L3.4,14l5.6,5.6L20.6,8L18,5.4L9,14.6z"/>
+</vector>

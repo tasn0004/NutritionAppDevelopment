@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BackgroundPageColor1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".SignUpActivity1"
+            tools:layout_editor_absoluteX="16dp">
+            <!-- title for sign up 1 -->
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:text="Tell us about yourself"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="20sp" />
+
+            <!-- Back Button -->
+            <TextView
+                android:id="@+id/backText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Back"
+                android:textColor="#2196F3"
+                android:textSize="16sp" />
+
+            <!-- title for  gender-->
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/tittle"
+                android:layout_marginTop="40dp"
+                android:text="Biological Sex"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="20sp" />
+
+            <!-- button choice for  male-->
+            <!-- button choice for  female-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/gendersToggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupForGenders"
+                    android:layout_width="182dp"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/maleButton"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_left_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Male"
+                        android:textStyle="bold"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+
+                    <RadioButton
+                        android:id="@+id/femaleButton"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_right_selected"
+                        android:button="@null"
+                        android:layout_marginStart="1dp"
+                        android:gravity="center"
+                        android:text="Female"
+                        android:textStyle="bold"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- title for  gender-->
+            <!-- age selector-->
+
+            <TextView
+                android:id="@+id/ageTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gendersToggleGroup"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Birthdate"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ageSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ageTittle"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/toggleSwitch"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textStyle="bold"
+                android:text="Today" />
+
+            <!-- weight Layout: -->
+            <!-- weight label -->
+            <TextView
+                android:id="@+id/weightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heightInput"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Weight"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="20sp" />
+            <!-- weight input -->
+            <EditText
+                android:id="@+id/weightInput"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weightLabel"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_border"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:textColorHint="#40000000"
+                android:numeric="decimal"/>
+            <!-- weight unit selection -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/weightToggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weightLabel"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/lbButton"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_left_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="lb"
+                        android:textStyle="bold"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+
+                    <RadioButton
+                        android:id="@+id/kgButton"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_right_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="kg"
+                        android:textStyle="bold"
+                        android:checked="true"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Height Layout: -->
+            <!-- Height label -->
+            <TextView
+                android:id="@+id/heightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ageSelect"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Height"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="20sp" />
+            <!-- Height input -->
+            <EditText
+                android:id="@+id/heightInput"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heightLabel"
+                android:layout_marginStart="30dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_border"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColorHint="#40000000"
+                android:numeric="decimal"/>
+            <!-- weight unit selection -->
+            <Spinner
+                android:id="@+id/heightInchSpinner"
+                android:layout_width="76dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/heightLabel"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_toEndOf="@+id/weightLabel"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/height_units" />
+            <!-- Height input -->
+            <EditText
+                android:id="@+id/heightInputInch"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heightLabel"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:background="@drawable/rounded_border"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:textColorHint="#40000000"
+                android:numeric="decimal"/>
+            <!-- Height unit selection -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/heightToggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heightLabel"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp">
+
+                <RadioGroup
+                    android:id="@+id/heightRadioGroup"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/inButton"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_left_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="in"
+                        android:textStyle="bold"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+
+                    <RadioButton
+                        android:id="@+id/cmButton"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_right_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="cm"
+                        android:textStyle="bold"
+                        android:checked="true"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- WristCircumference button -->
+            <TextView
+                android:id="@+id/WristCircumference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weightInput"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Wrist Circumference"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                />
+
+            <!-- WristCircumference edit text -->
+            <EditText
+                android:id="@+id/WristCircumferenceInput"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WristCircumference"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_border"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#40000000"
+                android:numeric="decimal"/>
+            <!-- WristCircumference measurement selector -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/WristCircumferenceToggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WristCircumference"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp">
+
+                <RadioGroup
+                    android:id="@+id/WristCircumferenceRadioGroup"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/inWCButton"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_left_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="in"
+                        android:textStyle="bold"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+
+                    <RadioButton
+                        android:id="@+id/cmWCButton"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/toggle_right_selected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="cm"
+                        android:checked="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/TextColorWhiteVsBlack"/>
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Biological Ethnicity Layout -->
+            <TextView
+                android:id="@+id/ethnicityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WristCircumferenceInput"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Biological Ethnicity"
+                android:textStyle="bold"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ethnicityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ethnicityLabel"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/toggleSwitch"
+                android:text="Please select"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                />
+            <!-- next button -->
+            <ImageButton
+                android:id="@+id/nextButton1"
+                android:layout_width="65dp"
+                android:layout_height="68dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="33dp"
+                android:layout_below="@+id/ethnicityButton"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="#FCC115"
+                android:contentDescription="@string/next_button_description"
+                android:src="@drawable/arrow_right" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

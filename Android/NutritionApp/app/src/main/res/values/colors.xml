@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_default">#E2FF30</color>
+    <color name="customBlack">#282828</color>
+    <color name="customBlackFortask">#343434</color>
+    <color name="customButtonBackground">#EAF896</color>
+    <color name="grey200">#EEEEEE</color>
+    <color name="DarkGreyForTabs">#80000000</color>
+    <color name="LightGreyForTabs">#808080</color>
+    <color name="dark_overlay">#99000000</color>
+
+    <color name="recipeOverlay">#34FFFFFF</color>
+    <color name="EditTextColour">#9E9E9E</color>
+
+
+
+    <color name="CheckBoxColor">#000000</color>
+    <color name="LimeGreenYellow">#F0FF5E</color>
+    <color name="TextColorWhiteVsBlack">#000000 </color>
+    <color name="TextColorBlackVsWhite">#FFFFFF</color>
+    <color name="GoldenYellow">#FCC115</color>
+    <color name="PaleYellowGreen">#DAE5B3</color>
+    <color name="BackgroundPageColor1">#E8E8E8  </color>
+    <color name="BackgroundPageColor2">#FFFFFF</color>
+    <color name="customAgreementTittle">#2196F3</color>
+    <color name="AlwaysBlack">#000000</color>
+    <color name="IconsGoldenVsBlack">#000000</color>
+    <color name="my_fill_color">#FCC115</color>
+    <color name="likes">#FF0000</color>
+    <color name="lineSperateRecipe">#E6000000</color>
+    <color name="lightGray">#686666</color>
+
+    <color name="my_stroke_color">#000000</color>
+    <color name="BackgroundForCheckBoxes">#FFFFFF</color>
+    <color name="days_of_week_tab">#BEB9B9</color>
+    <color name="button_selected">#FFA500</color>
+    <color name="tabs">#FF7700</color>
+    <color name="recipeDetailsCard">#FFFFFF</color>
+    <color name="commentBackground">#FFFFFF</color>
+    <color name="CommentUserName">#FF5722</color>
+    <color name="SettingsTextContent">#FF8C00</color>
+    <color name="selectedDotColor">#000000</color>
+    <color name="unselectedDotColor">#FFFFFF</color>
+    <color name="toggleSwitch">#BFBFBF</color>
+
+</resources>

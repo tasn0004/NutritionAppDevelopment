@@ -1,0 +1,42 @@
+<!-- item_nutrient.xml -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/nutrientNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:text="Nutrient:"/>
+
+        <TextView
+            android:id="@+id/nutrientDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:text="Value"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/nutrientProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:progress="50"/>
+    </LinearLayout>
+</merge>

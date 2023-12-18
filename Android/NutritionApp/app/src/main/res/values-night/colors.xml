@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="CheckBoxColor">#FFFFFF</color>
+    <color name="LimeGreenYellow">#E6E7FF54</color>
+    <color name="TextColorWhiteVsBlack">#FFFFFF </color>
+    <color name="TextColorBlackVsWhite">#000000</color>
+    <color name="GoldenYellow">#FCC115 </color>
+    <color name="PaleYellowGreen">#EAF896 </color>
+    <color name="BackgroundPageColor1">#282828</color>
+    <color name="BackgroundPageColor2">#343434</color>
+    <color name="BackgroundForCheckBoxes">#494949</color>
+    <color name="tabs">#FFCC38</color>
+    <color name="selectedDotColor">#000000</color>
+    <color name="unselectedDotColor">#FFFFFF</color>
+    <color name="CommentUserName">#FCC115</color>
+    <color name="SettingsTextContent">#FFFFFF</color>
+    <color name="my_stroke_color">#FCC115</color>
+    <color name="customAgreementTittle">#2196F3</color>
+    <color name="AlwaysBlack">#000000</color>
+    <color name="IconsGoldenVsBlack">#FCC115</color>
+    <color name="my_fill_color">#FCC115</color>
+    <color name="likes">#FF0000</color>
+    <color name="lineSperateRecipe">#E6E7FF54</color>
+    <color name="lightGray">#686666</color>
+    <color name="days_of_week_tab">#757575</color>
+    <color name="button_selected">#FFA500</color>
+    <color name="recipeDetailsCard">#494949</color>
+    <color name="commentBackground">#1A1A1A</color>
+    <color name="toggleSwitch">#686666</color>
+
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundPageColor1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".SignUpPage2"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <!-- title for sign up 2 -->
+        <TextView
+            android:id="@+id/tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Tell us about your activity level"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            android:textSize="24sp" />
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/backText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Back"
+            android:textColor="#2196F3"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:id="@+id/activityCheckboxScroll"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:layout_below="@+id/tittle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_for_checkboxes">
+
+            <LinearLayout
+                android:id="@+id/activityCheckboxLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very low"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/activityVeryLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/AlwaysBlack"
+                    android:text="No exercise, and completely sedentary"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/activityNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/AlwaysBlack"
+                    android:text="No exercise, but not sedentary"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slightly Active"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/activitySlightlyActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/AlwaysBlack"
+                    android:text="1-2 hrs/week of exercise or equivalent"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderately Active"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/activityModeratelyActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/AlwaysBlack"
+                    android:text="3-4 hrs/week of  exercise or equivalent"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very Active"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/activityVeryActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/AlwaysBlack"
+                    android:text="5-6 hrs/week of exercise of equivalent"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extremely Active"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/activityExtremelyActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/AlwaysBlack"
+                    android:text="7-8+ hrs and plus/ week of exercise or vigorous activity"
+                    android:textColor="@color/AlwaysBlack"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </ScrollView>
+        <!-- next button -->
+        <ImageButton
+            android:id="@+id/nextButton2"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/activityCheckboxScroll"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="#FCC115"
+            android:contentDescription="@string/next_button_description"
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="reply_indentation_margin">16dp</dimen>
+    <dimen name="table_row_height">48dp</dimen>
+    <dimen name="overlay_margin">46dp</dimen> <!-- Adjust this value as needed -->
+
+</resources>
+

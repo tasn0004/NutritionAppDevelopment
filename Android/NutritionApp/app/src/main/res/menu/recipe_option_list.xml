@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_to_meal_plan"
+        android:title="Add Recipe To Meal Plan" />
+    <item
+        android:id="@+id/share_recipe"
+        android:title="Share" />
+    <!-- Add more options as needed -->
+</menu>

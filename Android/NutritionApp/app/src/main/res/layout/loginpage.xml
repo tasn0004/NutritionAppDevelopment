@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <!-- android:background="@drawable/mm"> -->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/BackgroundPageColor1"
+        tools:context=".LoginActivity">
+
+        <!-- Welcome title  -->
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Switch
+                android:id="@+id/themeSwitch"
+                style="@style/CustomSwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/custom_thumb"
+                android:track="@drawable/toggle_selector_theme" />
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Welcome Title -->
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:text="Welcome to Nutricooks"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:text="Email Address"
+            android:textStyle="bold"
+            android:layout_below="@+id/welcomeTitle"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            />
+        <!-- email hint text  -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLabel"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:singleLine="true"
+            android:background="@drawable/rounded_border"
+            android:hint="Please Enter Your Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="#40000000" />
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Password"
+            android:layout_below="@+id/emailInput"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            />
+        <!-- password hint text  -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordLabel"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:singleLine="true"
+            android:background="@drawable/rounded_border"
+            android:hint="Please Enter Your Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#40000000" />
+        <!-- forgot password text  -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="Forgot password?"
+            android:textStyle="bold"
+            android:textColor="@color/customAgreementTittle"
+            />
+        <!-- sing up text  -->
+
+        <TextView
+            android:id="@+id/newUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="@color/customAgreementTittle"
+            />
+        <!-- Login Button  -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="215dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/forgotPassword"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/GoldenYellow"
+            android:text="Log In"
+            android:textSize="17dp"
+            android:textAllCaps="false"
+            android:textColor="@color/AlwaysBlack" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

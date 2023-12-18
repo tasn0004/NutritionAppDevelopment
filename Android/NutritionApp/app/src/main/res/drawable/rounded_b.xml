@@ -1,0 +1,10 @@
+<!-- res/drawable/custom_ripple.xml -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/GoldenYellow"> <!-- Replace with your desired ripple color -->
+    <item>
+        <shape>
+            <solid android:color="@color/GoldenYellow"/> <!-- Button's background color -->
+            <corners android:radius="40dp"/> <!-- Rounded corners -->
+        </shape>
+    </item>
+</ripple>

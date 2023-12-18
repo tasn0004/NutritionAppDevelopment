@@ -1,0 +1,19 @@
+<!-- res/drawable/tab_selected.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The full tab background -->
+
+    <!-- A gold border, adjust the size to make it look nicer -->
+    <item android:top="2dp" android:right="2dp" android:bottom="2dp" android:left="2dp">
+        <shape>
+            <solid android:color="@color/GoldenYellow"/> <!-- Border color -->
+            <corners android:radius="15dp"/> <!-- Slightly smaller radius than the tab for rounded corners -->
+        </shape>
+    </item>
+    <!-- The inner content area, you can adjust the color as needed -->
+    <item android:top="4dp" android:right="4dp" android:bottom="4dp" android:left="4dp">
+        <shape>
+            <solid android:color="@color/GoldenYellow"/> <!-- Inner content background color -->
+            <corners android:radius="14dp"/> <!-- Slightly smaller radius for inner content -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,61 @@
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\appsettings.Development.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\appsettings.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.exe
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.deps.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.runtimeconfig.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.dll
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.pdb
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.csproj.AssemblyReference.cache
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.AssemblyInfoInputs.cache
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.AssemblyInfo.cs
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.csproj.CoreCompileInputs.cache
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.MvcApplicationPartsAssemblyInfo.cache
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.AdminDashboard.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.build.AdminDashboard.props
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AdminDashboard.props
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AdminDashboard.props
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets.build.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets.development.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\scopedcss\bundle\AdminDashboard.styles.css
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.dll
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\refint\AdminDashboard.dll
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.pdb
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.genruntimeconfig.cache
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\ref\AdminDashboard.dll
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.staticwebassets.runtime.json
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.RazorAssemblyInfo.cache
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.RazorAssemblyInfo.cs
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Computer Engineering Technology\Project_Admin\Admin dashboard\AdminDashboard\AdminDashboard\obj\Debug\net6.0\scopedcss\projectbundle\AdminDashboard.bundle.scp.css
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\appsettings.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.staticwebassets.runtime.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.exe
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.deps.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.runtimeconfig.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.dll
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\bin\Debug\net6.0\AdminDashboard.pdb
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.AssemblyInfoInputs.cache
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.AssemblyInfo.cs
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.csproj.CoreCompileInputs.cache
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.RazorAssemblyInfo.cache
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.RazorAssemblyInfo.cs
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.AdminDashboard.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.build.AdminDashboard.props
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AdminDashboard.props
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AdminDashboard.props
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\scopedcss\bundle\AdminDashboard.styles.css
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\scopedcss\projectbundle\AdminDashboard.bundle.scp.css
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.dll
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\refint\AdminDashboard.dll
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.pdb
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\AdminDashboard.genruntimeconfig.cache
+C:\Users\windows\Desktop\nutrition app\NutritionApp\AdminDashboard\AdminDashboard\obj\Debug\net6.0\ref\AdminDashboard.dll

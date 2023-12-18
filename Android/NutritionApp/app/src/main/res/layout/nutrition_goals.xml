@@ -1,0 +1,539 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundPageColor2">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/days_of_week_tab"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/TextColorWhiteVsBlack"
+        app:tabTextAppearance="@style/MyTabTextAppearance"
+        app:tabTextColor="@color/TextColorWhiteVsBlack" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/tabLayout"
+        android:gravity="start"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Date"
+        android:textColor="@color/TextColorWhiteVsBlack"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/GoldenYellow"
+            android:layout_margin="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_background_for_circlebar">
+        <!-- NutrientViewLines for Calories -->
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/calories"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="calories"
+            app:progressColor="@color/customAgreementTittle" />
+    </LinearLayout>
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_background_for_circlebar">
+
+
+        <!-- Protein -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:text="Protein" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/proteinProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:indeterminate="false"
+                    android:max="0"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar_for_protein"/>
+
+                <TextView
+                    android:id="@+id/proteinText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/proteinDetailsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="0g/0g" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:text="Carbs" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/CarbsProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:indeterminate="false"
+                    android:max="0"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar_for_carbs" />
+
+                <TextView
+                    android:id="@+id/carbsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/CarbsDetailsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="100g/150g" />
+        </LinearLayout>
+
+        <!-- Fats -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:text="Fats" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/FatsProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:indeterminate="false"
+                    android:max="0"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar_for_fats" />
+
+                <TextView
+                    android:id="@+id/fatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/FatsDetailsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="0g/0g" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rounded_background_for_linesprogress">
+
+
+        <!-- First Row with 3 items -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="13dp"
+                android:weightSum="3">
+
+                <!-- Nuts & Legumes -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/nutsLegumesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Nuts &amp; Legumes" />
+                </LinearLayout>
+
+                <!-- Meat, Fish, Poultry -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/meatFishPoultryValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="13dp"
+                        android:text="Meat, Fish, Poultry" />
+                </LinearLayout>
+
+                <!-- No-Low Fat Dairy -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/noLowFatDairyValue"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="No-Low Fat Dairy" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Second Row with 4 items -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="4">
+
+                <!-- Grains -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/grainsValue"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="Grains" />
+                </LinearLayout>
+
+                <!-- Fruits -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/fruitsValue"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="Fruits" />
+                </LinearLayout>
+
+                <!-- Vegetables -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/vegetablesValue"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Vegetables" />
+                </LinearLayout>
+
+                <!-- Fats & Oils -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:id="@+id/fatsOilsValue"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="0/0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Fats &amp; Oils" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background_for_linesprogress">
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/sodium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="sodium"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/potassium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="potassium"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/fibre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="fibre"/>
+
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/saturatedFat"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:tag="saturatedFat">
+
+            <com.nutritionapp.NutrientViewLines
+                android:id="@+id/vitaminD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="vitaminD" />
+        </com.nutritionapp.NutrientViewLines>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/transFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="transFat"/>
+
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/zinc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="zinc"/>
+
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/vitaminA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="vitaminA"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/vitaminB12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="vitaminB12"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="sugar"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/calcium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="calcium"/>
+
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/folate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="folate"/>
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/magnesium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="magnesium"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/vitaminC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="vitaminC"/>
+
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/iron"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="iron"/>
+        <com.nutritionapp.NutrientViewLines
+            android:id="@+id/cholesterol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="cholesterol"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

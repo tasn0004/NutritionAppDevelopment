@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundPageColor1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".SignUpPage2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- title for sign up 4 -->
+        <TextView
+            android:id="@+id/tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:lineSpacingExtra="-9dp"
+            android:text="Almost there!"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            android:textSize="24sp" />
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/backText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Back"
+            android:textColor="#2196F3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goalTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tittle"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:text="Select your weight management goal"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            android:textSize="20sp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/goalTabLayout"
+            android:layout_width="370dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/goalTittle"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/rounded_tablayout"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/AlwaysBlack"
+            app:tabTextAppearance="@style/MyTabTextAppearance"
+            app:tabTextColor="@color/TextColorWhiteVsBlack" />
+
+        <TextView
+            android:id="@+id/dayTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goalTabLayout"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:text="What day of the week should your meal plan start?"
+            android:textColor="@color/TextColorWhiteVsBlack"
+            android:textSize="20sp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/weekTabLayout"
+            android:layout_width="370dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/dayTittle"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/rounded_tablayout"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="0dp"
+            android:textAllCaps="false"
+            app:tabSelectedTextColor="@color/AlwaysBlack"
+            app:tabTextAppearance="@style/MyTabTextAppearance"
+            app:tabTextColor="@color/TextColorWhiteVsBlack" />
+
+
+        <!-- next button -->
+        <Button
+            android:id="@+id/nextButton5"
+            android:layout_width="215dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/weekTabLayout"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/GoldenYellow"
+            android:text="Finish"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/AlwaysBlack" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

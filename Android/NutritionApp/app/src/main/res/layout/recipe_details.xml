@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BackgroundPageColor1">
+
+            <!-- Recipe Image -->
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="354dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/recipeImageDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <WebView
+                    android:id="@+id/youtubeWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/blackOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/frameLayout"
+                app:layout_constraintEnd_toEndOf="@id/frameLayout"
+                app:layout_constraintStart_toStartOf="@id/frameLayout" />
+
+            <ImageView
+                android:id="@+id/blackOverlay1"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="@id/frameLayout"
+                app:layout_constraintStart_toStartOf="@id/frameLayout"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/exitButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="21dp"
+                android:src="@drawable/exit_button"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+
+            <!-- Play Button Image -->
+
+            <!-- Options button on top right -->
+
+            <ImageView
+                android:id="@+id/playButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/playbutton"
+                app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+                app:layout_constraintStart_toStartOf="@+id/frameLayout" />
+
+            <!-- Picture behind all elements -->
+            <LinearLayout
+                android:id="@+id/backgroundLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/translucent_white_rounded"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+                app:layout_constraintEnd_toEndOf="@+id/frameLayout">
+
+                <!-- Icon before timeDetail -->
+                <ImageView
+                    android:id="@+id/timeIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/stopwatch" />
+
+                <TextView
+                    android:id="@+id/timeDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="30"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <!-- Text "MIN" after timeDetail -->
+                <TextView
+                    android:id="@+id/minText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=" MIN"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/optionsIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/add_list"
+                app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+
+            <!-- Recipe Name -->
+            <TextView
+                android:id="@+id/recipeNameDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/TextColorWhiteVsBlack"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/heartLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+            <!-- Heart Icon -->
+
+            <LinearLayout
+                android:id="@+id/heartLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/recipeNameDetail"
+                app:layout_constraintEnd_toStartOf="@+id/commentsLayout"
+                app:layout_constraintTop_toTopOf="@+id/recipeNameDetail">
+
+                <ImageView
+                    android:id="@+id/heartIconCount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/heart_empty" />
+
+                <TextView
+                    android:id="@+id/heartCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:text="0"
+                    android:textColor="@color/TextColorWhiteVsBlack" />
+            </LinearLayout>
+
+            <!-- Chat Icon -->
+            <LinearLayout
+                android:id="@+id/commentsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/recipeNameDetail"
+                app:layout_constraintEnd_toStartOf="@+id/favoriteIcon"
+                app:layout_constraintTop_toTopOf="@+id/recipeNameDetail">
+
+                <ImageView
+                    android:id="@+id/chatIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chat"
+                    app:layout_constraintVertical_bias="0.4"
+                    app:tint="@color/IconsGoldenVsBlack" />
+
+                <TextView
+                    android:id="@+id/commentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:text="0"
+                    android:textColor="@color/TextColorWhiteVsBlack" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/favoriteIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/favorite_outline"
+                app:layout_constraintBottom_toBottomOf="@+id/recipeNameDetail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recipeNameDetail" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lineSperateRecipe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipeNameDetail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator">
+                <TextView
+                    android:id="@+id/backgroundContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="10dp"
+                    android:paddingStart="15dp"
+                    android:layout_margin="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Your ingredients text here."
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:textSize="16sp"
+                     />
+                <LinearLayout
+                    android:id="@+id/ingredientsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/separator">
+
+                    <!-- Header Layout with Icon and Label -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/ingredientsLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Ingredients"
+                            android:textColor="@color/tabs"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ingredientsExpandIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/expand_icon" />
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/tableContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/ingredientsTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_background"
+                        android:foregroundTint="@color/TextColorBlackVsWhite"
+                        android:paddingTop="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:visibility="gone">
+                        <!-- Rows will be added programmatically -->
+                    </TableLayout>
+                        <ImageView
+                            android:id="@+id/blurOverlayImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:scaleType="fitXY" /> <!-- Ensure the blurred image fits the view -->
+                        <TextView
+                            android:id="@+id/overlayTextIngredients"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe to see more"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/descriptionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ingredientsLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/descriptionLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Description"
+                            android:textColor="@color/tabs"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/descriptionExpandIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/expand_icon" />
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/descriptionContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/descriptionContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_background"
+                        android:fontFamily="sans-serif-light"
+                        android:lineSpacingExtra="4dp"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="10dp"
+                        android:text="Your ingredients text here."
+                        android:textColor="@color/TextColorWhiteVsBlack"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                    <ImageView
+                        android:id="@+id/blurOverlayImageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:scaleType="fitXY" />
+                        <TextView
+                            android:id="@+id/overlayTextDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe to see more"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nutritionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ingredientsLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/nutritionLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nutrition"
+                            android:textColor="@color/tabs"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/nutritionExpandIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/expand_icon" />
+                    </LinearLayout>
+
+
+
+                    <FrameLayout
+                        android:id="@+id/nutritionContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableLayout
+                            android:id="@+id/nutritionTable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_background"
+                            android:padding="10dp"
+                            android:paddingTop="8dp"
+                            android:stretchColumns="*"
+                            android:visibility="gone">
+                            <!-- Rows will be added programmatically -->
+                        </TableLayout>
+                        <ImageView
+                            android:id="@+id/blurOverlayImageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:scaleType="fitXY" />
+                        <TextView
+                            android:id="@+id/overlayTextNutrition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe to see more"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

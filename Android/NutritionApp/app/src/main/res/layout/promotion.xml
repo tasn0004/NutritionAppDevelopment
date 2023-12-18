@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundPageColor1"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/promotionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promotions"
+        android:textSize="24sp"
+        android:textColor="@color/TextColorWhiteVsBlack"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/promoCodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotionTitle"
+        android:hint="Enter Promotion Code"
+        android:background="@color/customBlackFortask"
+        android:textColorHint="@color/TextColorWhiteVsBlack"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promoCodeInput"
+        android:layout_centerHorizontal="true"
+        android:text="Apply"
+        android:textColor="@color/TextColorBlackVsWhite"
+        android:backgroundTint="@color/GoldenYellow"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

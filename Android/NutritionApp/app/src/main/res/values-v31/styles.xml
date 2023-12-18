@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NoSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Use NoActionBar as the parent if you want no action bar -->
+        <item name="android:windowSplashScreenBackground">@android:color/transparent</item>
+        <!-- Setting a transparent color will effectively remove the splash screen background -->
+        <item name="android:windowSplashScreenAnimatedIcon">@null</item>
+        <!-- Remove the animated icon -->
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <!-- Set the animation duration to 0 -->
+    </style>
+</resources>

@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundPageColor2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:cardCornerRadius="10dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabIndicatorHeight="0dp"
+                app:tabTextColor="@color/TextColorWhiteVsBlack"
+                android:background="@color/days_of_week_tab"
+                app:tabTextAppearance="@style/MyTabTextAppearance"
+                app:tabSelectedTextColor="@color/TextColorWhiteVsBlack" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Date"
+        android:textColor="@color/TextColorWhiteVsBlack"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                >
+                <!-- Breakfast Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Breakfast"
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/GoldenYellow"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/breakfastRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <Button
+                        android:id="@+id/addBreakfastRecipeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to Meal Plan"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/AlwaysBlack"
+                        android:backgroundTint="@color/button_selected"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+                <!-- Lunch Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Lunch"
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/GoldenYellow"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lunchRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <Button
+                        android:id="@+id/addLunchRecipeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to Meal Plan"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/AlwaysBlack"
+                        android:backgroundTint="@color/button_selected"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Dinner Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Dinner"
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/GoldenYellow"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dinnerRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <Button
+                        android:id="@+id/addDinnerRecipeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to Meal Plan"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/AlwaysBlack"
+                        android:backgroundTint="@color/button_selected"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- desserts Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Dessert"
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/GoldenYellow"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/DessertRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <Button
+                        android:id="@+id/addDessertsRecipeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to Meal Plan"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/AlwaysBlack"
+                        android:backgroundTint="@color/button_selected"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Snacks Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Snacks"
+                    android:textColor="@color/TextColorWhiteVsBlack"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/GoldenYellow"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/snackRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <Button
+                        android:id="@+id/addSnacksRecipeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to Meal Plan"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/AlwaysBlack"
+                        android:backgroundTint="@color/button_selected"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

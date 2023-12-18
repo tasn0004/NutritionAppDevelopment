@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This layout is first page of the sign up-->
+<!--to get personal info from user: name, email, and password-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <!-- android:background="@drawable/mm"> -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundPageColor1"
+        tools:context=".SignUpActivity"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Back"
+            android:singleLine="true"
+            android:textColor="#2196F3"
+            android:textSize="16sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logoInHomePage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/firstNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/logoInHomePage"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="First Name"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack" />
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNameLabel"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_border"
+            android:hint="Enter First Name"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColorHint="#40000000" />
+
+        <TextView
+            android:id="@+id/lastNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNameInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Last Name"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack" />
+
+        <!-- Last Name Input -->
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNameInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/rounded_border"
+            android:hint="Enter Last Name"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColorHint="#40000000" />
+
+        <!-- Email Label -->
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastNameInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Email Address"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack" />
+        <!-- User Email Input  -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastNameInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_border"
+            android:hint="Enter Email Addrfess"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColorHint="#40000000" />
+        <!-- password Label -->
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack" />
+        <!-- User password Input  -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_border"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColorHint="#40000000" />
+        <!-- confirm password Label -->
+        <TextView
+            android:id="@+id/passwordConfirmLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Confirm Password "
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhiteVsBlack" />
+        <!-- User confirm password Input  -->
+
+        <EditText
+            android:id="@+id/passwordInputConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordInput"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_border"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="#40000000" />
+
+        <!-- I acknowledge and agree CheckBox and TextView -->
+        <CheckBox
+            android:id="@+id/agreeToTermsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordInputConfirm"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:buttonTint="@color/TextColorWhiteVsBlack" />
+
+        <TextView
+            android:id="@+id/termsAndConditionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/agreeToTermsCheckBox"
+            android:layout_alignBaseline="@id/agreeToTermsCheckBox"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/TextColorWhiteVsBlack" />
+
+        <!-- continue button to next page   -->
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="33dp"
+            android:layout_below="@+id/termsAndConditionsText"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="@color/GoldenYellow"
+            android:contentDescription="@string/next_button_description"
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
